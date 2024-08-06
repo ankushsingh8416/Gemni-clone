@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon"
+        href="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-gemini-icon.png"
+        type="image/x-icon">
+</head>
+
+<body class="dark-theme" data-theme="dark">
+    <div class="container">
+        <nav>
+           <header>
+            <div class="logo">
+                <a href="/"> <img src="logo.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <div class="topBarAction">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+           </header>
+
+        </nav>
+        <div class="sideNavigation">
+            <div class="topBarAction">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="logo">
+                <a href="/"> <img src="logo.png" alt=""></a>
+            </div>
+
+            <div class="sideNavButton">
+                <button onclick="newChat()">
+                    <i class="fa-solid fa-plus"></i><span class="collapseText">New Chat</span>
+                </button>
+            </div>
+            <div class="chatHistory">
+                <h5>Recent</h5>
+                <ul>
+
+
+
+                </ul>
+            </div>
+
+            <div class="actionList">
+                <button class="transparentButton" title="Help">
+                    <i class="fa-regular fa-circle-question"></i><span class="collapseText">Help</span>
+                </button>
+
+                <button class="transparentButton" title="Activity">
+                    <i class="fa-solid fa-clock-rotate-left"></i><span class="collapseText">Activity</span>
+                </button>
+
+                <button class="transparentButton" title="Settings">
+                    <i class="fa-solid fa-gear"></i><span class="collapseText">Settings</span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="chatWindow">
+            <div class="startContent">
+                <h1>
+                    <span class="brandHello">
+                        Hello There ,
+                    </span> <br>
+                    <span class="brandQuestion">
+                        How Can i Help You Today ?
+                    </span>
+                </h1>
+                <br>
+                <ul>
+                </ul>
+
+            </div>
+            <div class="chatContent">
+                <div class="results">
+                </div>
+
+            </div>
+            <footer>
+                <div class="inputArea">
+                    <input type="text" placeholder="Enter a Prompt here">
+                    <div class="icongroup">
+                        <i class="fa-solid fa-sun" onclick="toggletheme()"></i>
+                        <i class="fa-solid fa-microphone"></i>
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                    </div>
+                </div>
+                <p class="privacyPolicy">
+                    Gemini may display inaccurate info, including about people, so double-check its responses. Your
+                    privacy
+                    and Gemini Apps </p>
+            </footer>
+        </div>
+        <div class="light"></div>
+        <div class="white-light"></div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
